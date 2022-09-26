@@ -17,4 +17,11 @@ public class AuthorService {
     public List<Author> getAuthors() {
         return repository.findAll();
     }
+
+    public Author getAuthor(Long id) {
+        Author author = repository.findById(id)
+                .orElseThrow(() -> new IllegalStateException("author with id " + id + " does not exists."));
+
+        return author;
+    }
 }

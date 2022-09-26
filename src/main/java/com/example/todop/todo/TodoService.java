@@ -21,4 +21,8 @@ public class TodoService {
     public Todo createTodo(Todo todo) {
         return repository.save(todo);
     }
+
+    public List<Todo> getTodoByTitle(String title) {
+        return repository.getTodoByTitleContains(title);
+    }
 }

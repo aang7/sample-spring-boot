@@ -10,6 +10,5 @@ public class TodopApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(TodopApplication.class, args);
-		FixturesDB.initData(applicationContext);
 	}
 }

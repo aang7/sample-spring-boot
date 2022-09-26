@@ -1,0 +1,33 @@
+
+* Intro
+This is a super basic spring boot sample project that was created for learning purposes.
+
+The project is basically a =Todo= server app.
+It uses the power of *spring boot* to create the database schema and the power of =Docker= to manage the two involved services, which are:
+
+1. A PostgreSQL database
+2. An Spring boot REST server
+
+Below you can see a general architecture overview of the project.
+
+
+#+CAPTION: General Architecture design Overview
+[[file:readme.org_imgs/API-General-Architecture.png]]
+
+* Database model
+
+For the database we have two tables:
+1. author
+2. todo
+
+Each table represents an entity in spring boot class models =Author= and =Todo=.
+
+They have an 1-M (one to many) relationship.
+
+#+CAPTION: Database models and relationship
+[[file:readme.org_imgs/DiagramaGeneralDeDB.png]]
+
+
+* TODO Final comments
+
+You can see my notes over spring boot on my study notes here.
